@@ -77,7 +77,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import {
   MdDashboard, MdDescription, MdAdd, MdPeople,
-  MdLogout, MdSearch, MdOutlineWarning, MdPerson
+  MdLogout, MdSearch, MdOutlineWarning, MdPerson,
+  MdHistory
 } from 'react-icons/md';
 
 // const NavItem = ({ to, icon: Icon, label }) => (
@@ -156,6 +157,15 @@ export default function Sidebar() {
 
         <p className="sidebar-nav-label" style={{ marginTop: 12 }}>ACCOUNT</p>
         <NavItem to="/profile" icon={MdPerson} label="Profile" />
+
+        /* /////////////////////////////////// */
+        <NavItem to="/complaints" icon={MdDescription} label="All Complaints" />
+
+        {/* Add this new item */}
+        {isRole('officer', 'senior', 'admin') && (
+          <NavItem to="/history" icon={MdHistory} label="Complaint History" />
+        )} 
+        
       </nav>
 
       {/* Footer */}

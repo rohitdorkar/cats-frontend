@@ -15,6 +15,7 @@ import FileComplaintPage from './pages/FileComplaintPage';
 import EscalatedPage from './pages/EscalatedPage';
 import StaffManagementPage from './pages/StaffManagementPage';
 import ProfilePage from './pages/ProfilePage';
+import ComplaintHistoryPage from './pages/ComplaintHistoryPage';
 
 export default function App() {
   return (
@@ -81,6 +82,16 @@ export default function App() {
 
             {/* Profile */}
             <Route path="/profile" element={<ProfilePage />} />
+            
+            {/* Add this route */}
+            <Route
+              path="/history"
+              element={
+                <ProtectedRoute roles={['officer', 'senior', 'admin']}>
+                  <ComplaintHistoryPage />
+                </ProtectedRoute>
+              }
+            />
           </Route>
 
           {/* Fallback */}
