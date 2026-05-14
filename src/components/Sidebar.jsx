@@ -158,14 +158,13 @@ export default function Sidebar() {
         <p className="sidebar-nav-label" style={{ marginTop: 12 }}>ACCOUNT</p>
         <NavItem to="/profile" icon={MdPerson} label="Profile" />
 
-        /* /////////////////////////////////// */
+        
         <NavItem to="/complaints" icon={MdDescription} label="All Complaints" />
-
         {/* Add this new item */}
         {isRole('officer', 'senior', 'admin') && (
           <NavItem to="/history" icon={MdHistory} label="Complaint History" />
         )} 
-        
+
       </nav>
 
       {/* Footer */}
