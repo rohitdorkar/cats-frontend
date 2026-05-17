@@ -242,16 +242,32 @@ export default function LoginPage() {
             <p className="login-demo-title">🔑 Demo Credentials</p>
             <div className="login-demo-grid">
               <div className="login-demo-item">
-                <span className="login-demo-role">Admin</span>
-                <span className="login-demo-cred">admin@cats.gov.in / admin123</span>
-              </div>
-              <div className="login-demo-item">
                 <span className="login-demo-role">Operator</span>
                 <span className="login-demo-cred">operator@cats.gov.in / operator123</span>
               </div>
               <div className="login-demo-item">
-                <span className="login-demo-role">Officer</span>
+                <span className="login-demo-role">Officer1</span>
                 <span className="login-demo-cred">officer1@cats.gov.in / officer123</span>
+              </div>
+              <div className="login-demo-item">
+                <span className="login-demo-role">Admin</span>
+                <span className="login-demo-cred">admin@cats.gov.in / admin123</span>
+              </div>
+              <div className="login-demo-item">
+                <span className="login-demo-role">Officer2</span>
+                <span className="login-demo-cred">officer2@cats.gov.in / officer123</span>
+              </div>
+              <div className="login-demo-item">
+                <span className="login-demo-role">Officer3</span>
+                <span className="login-demo-cred">officer3@cats.gov.in / officer123</span>
+              </div>
+              <div className="login-demo-item">
+                <span className="login-demo-role">Senior officer1</span>
+                <span className="login-demo-cred">senior@cats.gov.in / senior123</span>
+              </div>
+              <div className="login-demo-item">
+                <span className="login-demo-role">Senior officer2</span>
+                <span className="login-demo-cred">amey@cats.gov.in / senior123</span>
               </div>
             </div>
           </div>
