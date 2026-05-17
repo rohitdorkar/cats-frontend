@@ -250,16 +250,16 @@ export default function LoginPage() {
                 <span className="login-demo-cred">officer1@cats.gov.in / officer123</span>
               </div>
               <div className="login-demo-item">
-                <span className="login-demo-role">Admin</span>
-                <span className="login-demo-cred">admin@cats.gov.in / admin123</span>
-              </div>
-              <div className="login-demo-item">
                 <span className="login-demo-role">Officer2</span>
                 <span className="login-demo-cred">officer2@cats.gov.in / officer123</span>
               </div>
               <div className="login-demo-item">
                 <span className="login-demo-role">Officer3</span>
                 <span className="login-demo-cred">officer3@cats.gov.in / officer123</span>
+              </div>
+              <div className="login-demo-item">
+                <span className="login-demo-role">Admin</span>
+                <span className="login-demo-cred">admin@cats.gov.in / admin123</span>
               </div>
               <div className="login-demo-item">
                 <span className="login-demo-role">Senior officer1</span>
