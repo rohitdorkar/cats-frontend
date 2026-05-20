@@ -78,7 +78,7 @@ import { useAuth } from '../context/AuthContext';
 import {
   MdDashboard, MdDescription, MdAdd, MdPeople,
   MdLogout, MdSearch, MdOutlineWarning, MdPerson,
-  MdHistory
+  MdHistory, MdBarChart
 } from 'react-icons/md';
 
 // const NavItem = ({ to, icon: Icon, label }) => (
@@ -153,6 +153,7 @@ export default function Sidebar() {
           <>
             <p className="sidebar-nav-label" style={{ marginTop: 12 }}>MANAGEMENT</p>
             <NavItem to="/escalated" icon={MdOutlineWarning} label="Escalated" />
+            <NavItem to="/analytics" icon={MdBarChart} label="Analytics" />
           </>
         )}
 

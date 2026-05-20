@@ -38,7 +38,7 @@ api.interceptors.response.use(
   }
 );
 
-// ── Auth ──────────────────────────────────────────────
+// ── Auth ─────────────────────────────────────────────
 export const authAPI = {
   login: (email, password) => api.post('/auth/login/', { email, password }),
   register: (data) => api.post('/auth/register/', data),
@@ -63,6 +63,7 @@ export const complaintsAPI = {
   escalate: (id, data) => api.post(`/complaints/${id}/escalate/`, data),
   reassign: (id, data) => api.post(`/complaints/${id}/reassign/`, data),
   dashboardStats: () => api.get('/dashboard/stats/'),
+  analytics: (params) => api.get('/analytics/', { params }),  
 };
 
 export default api;

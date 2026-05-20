@@ -16,6 +16,7 @@ import EscalatedPage from './pages/EscalatedPage';
 import StaffManagementPage from './pages/StaffManagementPage';
 import ProfilePage from './pages/ProfilePage';
 import ComplaintHistoryPage from './pages/ComplaintHistoryPage';
+import AnalyticsPage from './pages/AnalyticsPage';
 
 export default function App() {
   return (
@@ -92,6 +93,16 @@ export default function App() {
                 </ProtectedRoute>
               }
             />
+            
+            <Route
+              path="/analytics"
+              element={
+                <ProtectedRoute roles={['senior', 'admin']}>
+                  <AnalyticsPage />
+                </ProtectedRoute>
+              }
+            />
+            
           </Route>
 
           {/* Fallback */}
