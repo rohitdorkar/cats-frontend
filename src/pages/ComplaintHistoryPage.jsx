@@ -188,7 +188,7 @@ export default function ComplaintHistoryPage() {
 
                     {/* Complainant Info */}
                     <div className="history-detail-section">
-                      <h4 className="history-detail-heading">👤 Complainant Details</h4>
+                      <h4 className="history-detail-heading">👤 Citizen Details</h4>
                       <div className="history-detail-rows">
                         <div className="history-detail-row">
                           <span>Name</span>

@@ -238,7 +238,7 @@ export default function LoginPage() {
           </div>
 
           {/* Demo credentials */}
-          <div className="login-demo-box">
+          {/* <div className="login-demo-box">
             <p className="login-demo-title">🔑 Demo Credentials</p>
             <div className="login-demo-grid">
               <div className="login-demo-item">
@@ -270,7 +270,7 @@ export default function LoginPage() {
                 <span className="login-demo-cred">amey@cats.gov.in / senior123</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

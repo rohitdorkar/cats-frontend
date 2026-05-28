@@ -1337,7 +1337,7 @@ function PrintableComplaint({ complaint }) {
         <div>
           {/* Citizen Details */}
           <div className="print-section">
-            <h2 className="print-section-title">👤 Complainant Details</h2>
+            <h2 className="print-section-title">👤Citizens Details</h2>
             <div className="print-field">
               <span className="print-field-label">Full Name</span>
               <span className="print-field-value">{complaint.complainant_name}</span>
