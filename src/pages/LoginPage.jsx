@@ -230,11 +230,16 @@ export default function LoginPage() {
           </form>
 
           {/* Track link */}
-          <div className="login-track-link">
-            <span>Want to track your complaint?</span>
-            <Link to="/track" className="login-track-anchor">
-              Track Here →
+          <div className="login-track-section">
+            <div className="login-track-divider">
+              <span className="login-track-divider-text">OR</span>
+            </div>
+            <Link to="/track" className="login-track-btn">
+              🔍 Track Your Complaint
             </Link>
+            <p className="login-track-note">
+              No login required — track using your complaint number
+            </p>
           </div>
 
           {/* Demo credentials */}
